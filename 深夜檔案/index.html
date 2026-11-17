@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101313">
+  <meta name="description" content="一份未結案的機密卷宗。交叉比對證詞、日記與時間軸，找出那通電話背後的真相。">
+  <title>深夜檔案 — 未結案卷宗 07</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="深夜檔案首頁"><span class="brand-mark">D<span>／</span>A</span><span class="brand-name">深夜檔案 <small>DEEP ARCHIVE</small></span></a>
+    <div class="classification"><span class="pulse"></span>司法鑑識資料庫 <span class="class-divider">／</span> 內部閱覽</div>
+    <button class="sound-toggle" id="soundToggle" aria-label="切換環境音"><span class="sound-dot"></span> <span id="soundText">環境音 關</span></button>
+  </header>
+
+  <main id="top">
+    <section class="case-hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span>CASE FILE</span><i></i><span>未結案件</span></div>
+        <h1>最後一通<br><em>未接來電</em></h1>
+        <p class="hero-desc">凌晨兩點十七分，海邊的舊旅館傳出一聲巨響。<br>房門從內反鎖，桌上留著半杯冷掉的茶。</p>
+        <div class="hero-meta">
+          <div><small>卷宗編號</small><strong>DA-07-2419</strong></div>
+          <div><small>案件狀態</small><strong class="status"><i></i>待重新調查</strong></div>
+          <div><small>可閱權限</small><strong>LEVEL 03</strong></div>
+        </div>
+        <a class="scroll-cue" href="#evidence"><span class="scroll-line"></span>下滑以展開卷宗</a>
+      </div>
+      <div class="hero-art" aria-label="海邊旅館房間的虛構鑑識示意圖" role="img">
+        <div class="art-stamp">EVIDENCE<br>RECONSTRUCTION<br><b>07—A</b></div>
+        <div class="window"><div class="moon"></div><div class="sea"></div><div class="horizon"></div><div class="rain rain-one"></div><div class="rain rain-two"></div><div class="rain rain-three"></div></div>
+        <div class="room-wall"></div><div class="floor"></div><div class="lamp"></div><div class="table"><i></i><span></span></div><div class="chair"></div>
+        <div class="photo-caption"><span>現場重建示意／非真實照片</span><span>北岸・潮汐旅館 203</span></div>
+      </div>
+      <div class="hero-index">ARCHIVE 07 <span>／</span> 2024.11.03</div>
+    </section>
+
+    <section class="case-strip"><span>檔案閱覽紀錄</span><span>案件發生　2024.11.03</span><span>最後更新　2025.02.14</span><span class="strip-right">請勿複製・外流・轉載</span></section>
+
+    <section class="section evidence-section" id="evidence">
+      <div class="section-head"><div><div class="eyebrow"><span>01 / EVIDENCE</span><i></i><span>現場證物</span></div><h2>所有細節，<em>都可能說謊。</em></h2></div><p>選取證物查看鑑識紀錄。<br>注意那些看起來不重要的地方。</p></div>
+      <div class="evidence-layout">
+        <div class="evidence-list" role="tablist" aria-label="選擇證物">
+          <button class="evidence-tab active" role="tab" aria-selected="true" data-evidence="photo"><span class="evidence-no">E—01</span><span class="evidence-tab-title">房間現場</span><span class="evidence-kind">現場重建</span><span class="tab-arrow">↗</span></button>
+          <button class="evidence-tab" role="tab" aria-selected="false" data-evidence="diary"><span class="evidence-no">E—02</span><span class="evidence-tab-title">日記殘頁</span><span class="evidence-kind">紙本證物</span><span class="tab-arrow">↗</span></button>
+          <button class="evidence-tab" role="tab" aria-selected="false" data-evidence="call"><span class="evidence-no">E—03</span><span class="evidence-tab-title">通話紀錄</span><span class="evidence-kind">電信回函</span><span class="tab-arrow">↗</span></button>
+          <button class="evidence-tab" role="tab" aria-selected="false" data-evidence="autopsy"><span class="evidence-no">E—04</span><span class="evidence-tab-title">法醫摘要</span><span class="evidence-kind">鑑定報告</span><span class="tab-arrow">↗</span></button>
+        </div>
+        <article class="evidence-detail" id="evidenceDetail" role="tabpanel"></article>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="timeline">
+      <div class="section-head"><div><div class="eyebrow"><span>02 / RECONSTRUCTION</span><i></i><span>時間軸重建</span></div><h2>把時間，<em>放回正確的位置。</em></h2></div><p>點擊事件卡片調整排序。<br>你相信哪個人的說法？</p></div>
+      <div class="timeline-board"><div class="timeline-top"><span>11 月 02 日 — 11 月 03 日</span><span class="mono">LOCAL TIME · UTC+8</span></div><div class="timeline-track"><span class="track-node"></span><span class="track-node"></span><span class="track-node"></span><span class="track-node"></span><span class="track-node"></span></div>
+        <div class="event-grid" id="eventGrid"></div>
+        <div class="timeline-note"><span class="note-mark">!</span><span><b>鑑識備註</b>　旅館走廊監視器於 01:42 至 02:31 間無影像。管理員稱：「那晚只是跳電。」</span></div>
+      </div>
+    </section>
+
+    <section class="question-section" id="question">
+      <div class="question-decoration">?</div><div class="question-inner"><div class="eyebrow"><span>03 / YOUR CONCLUSION</span><i></i><span>調查員結論</span></div><h2>那通電話，<br><em>是誰打給誰？</em></h2><p>選出你認為最合理的推論。卷宗中有不只一個人說了謊。</p>
+        <div class="answer-list" id="answerList"></div><div class="answer-feedback" id="answerFeedback" aria-live="polite"></div>
+        <button class="submit-answer" id="submitAnswer">提交推論 <span>→</span></button><div class="question-foot"><span>推論一經提交，將記錄於本機調查日誌</span><span>匿名調查員 / #07</span></div>
+      </div>
+    </section>
+
+    <section class="solution-section" id="solution" hidden><div class="solution-top"><span class="eyebrow">CASE REOPENED <i></i> FILE DECLASSIFIED</span><span class="solution-stamp">真相解鎖</span></div><h2>她沒有在等救援。<br><em>她在等他承認。</em></h2><div class="solution-columns"><p>林以安的日記不是遺書，而是一份倒數。三年前，周明哲在那場車禍後，把副駕駛座上的妹妹留在現場，並用「她當時已經沒有呼吸」說服所有人。</p><p>凌晨 01:48，電話從 203 房撥出，接聽者是旅館管理員——也是當年替周明哲藏起車鑰匙的人。林以安只問了一句：「你還記得那晚嗎？」那通未接來電，來自周明哲。他回撥時，房內已經沒有活人。</p><p class="solution-caveat">卷宗附註：本案為虛構互動故事。所有人物與事件均為創作。</p></div><button class="reset-case" id="resetCase">重新調查 ↺</button></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#top"><span class="brand-mark">D<span>／</span>A</span><span class="brand-name">深夜檔案 <small>DEEP ARCHIVE</small></span></a><span>一份虛構的互動推理卷宗</span><span class="mono">© DEEP ARCHIVE / FICTIONAL CASE</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
